@@ -125,15 +125,15 @@ def get_text(raw_url):
 
 def main():
 
-  st.title("Text Analytics Application")
+  st.title("NLPfy - Text Analytics Application")
 
   # Sidebar 1 (Information about NLP)
   if st.sidebar.checkbox("About NLP"):
     st.subheader("What is Natural Language Processing(NLP)?")
     st.write("NLP is a branch of artificial intelligence that deals with analyzing, understanding and generating the languages that humans use naturally in order to interface with computers in both written and spoken contexts using natural human languages instead of computer languages.")
     
-    img1 = Image.open("1.jpg")
-    st.image(img1, width=700)
+    img1 = Image.open("Images/1.jpg")
+    st.image(img1, width=300)
   
     st.subheader("What is Natural Language Processing good for?")
     st.write("1) Summarize blocks of text to extract the most important and central ideas while ignoring irrelevant information.")
@@ -243,7 +243,7 @@ def main():
         st.write(html, unsafe_allow_html=True)
       
       if st.button("Extract Entities Code"):
-        img2 = Image.open("3.PNG")
+        img2 = Image.open("Images/2.PNG")
         st.image(img2, width=800)
 
     # Named entity checker with url
