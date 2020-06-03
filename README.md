@@ -20,4 +20,16 @@ Text Analytics Web Application which preforms various tasks which include -
 * GloVe file - https://nlp.stanford.edu/projects/glove/
 
 
-### Run the application by opening your environment terminal by - `streamlit run app.py`
+### Run the application by opening the virtual environment terminal with command -  
+
+`streamlit run app.py`
+
+## Some of the preview of the application - 
+
+![](Images/preview.PNG)
+
+![](Images/sent_tkzn.PNG)
+
+![](Images/NER.PNG)
+
+![](Images/summarizer.PNG)
