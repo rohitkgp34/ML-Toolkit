@@ -39,7 +39,7 @@ def text_analyzer(my_text):
 
 
 
-# Function For Text Summary
+# Function For Text Summarization
 @st.cache
 def text_summarizer(my_text, n):
     sentences = my_text.split('.')
@@ -59,11 +59,8 @@ def text_summarizer(my_text, n):
     import pandas as pd
     clean_sentences = pd.Series(sentences).str.replace("[^a-zA-Z]", " ")
 
-    # make alphabets lowercase
+    # make alphabets lowercase and importing stopwords
     clean_sentences = [s.lower() for s in clean_sentences]
-
-
-    # importing stopwords
     stop_words = stopwords.words('english')
 
     # function to remove stopwords
@@ -84,6 +81,7 @@ def text_summarizer(my_text, n):
 
     sim_mat = np.zeros([len(sentences), len(sentences)])
 
+    # Calculation similarities between sentences (vectors)
     for i in range(len(sentences)):
       for j in range(len(sentences)):
         if i != j:
@@ -118,10 +116,7 @@ def get_text(raw_url):
   return fetched_text
 
 
-
-
-
-
+# Wirting main function for our toolkit
 
 def main():
 

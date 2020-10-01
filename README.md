@@ -1,4 +1,4 @@
-# NLPfy
+# ML-Toolkit
 
 Text Analytics Web Application which preforms various tasks which include - 
 * Sentence Tokenisation
@@ -24,7 +24,7 @@ Text Analytics Web Application which preforms various tasks which include -
 
 `streamlit run app.py`
 
-## Some of the preview of the application - 
+## Below I have shown some images of the ML-Toolkit - 
 
 ![](Images/preview.PNG)
 
