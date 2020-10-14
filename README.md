@@ -1,4 +1,4 @@
-# NLPfy
+# ML Toolkit
 
 Text Analytics Web Application which preforms various tasks which include - 
 * Sentence Tokenisation
